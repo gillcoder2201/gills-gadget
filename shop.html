@@ -3,51 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shop | Gill's Gadget</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Gill's Gadget</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+      padding: 20px;
+      color: #333;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      background: #f9f9f9;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 1.2em;
+      color: #222;
+    }
+    .card p {
+      color: #555;
+      margin: 8px 0;
+      font-size: 0.95em;
+    }
+    .card .price {
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      color: #000;
+    }
+    .btn {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Our Products</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <main class="product-grid">
-    <div class="product-card">
-  <img src="EARBUD_IMAGE_URL" alt="Earbuds" width="200">
-  <h3>Ultrapods Max TWS Earbuds Pro Bluetooth</h3>
-  <p> Ultrapods Max TWS Earbuds Pro Bluetooth | Transparent Design | Fast Charging | 13Mm HD Bass Drivers(blue colour)
-Ultrapods Max TWS Earbuds Pro Bluetooth | Transparent Design | Fast Charging | 13Mm HD Bass Drivers(blue colour)
+  <h1>Gill's Gadget – Where Gadget Meets Budget</h1>
 
-Battery Charge Time: 1 Hour
-BIS/ISI Certification Number: 0
-Bluetooth Range: 20m
-Bluetooth Version: 5.2
-Charging Type: Micro USB
-Color: Blue
-Compatibility: All Smartphones
-Material: ABS Plastic
-Mic: Yes
-Model Name: AIR31
-Net Quantity (N): 1
-Noise Cancelling: Yes
-Play Time: 10 Hours
-Type: TWS
-Warranty Period: 1 Month
-Warranty Type: No Warranty
-Country of Origin: India</p>
-  <p><strong>Price: ₹349</strong></p>
-  <button onclick="openRazorpay('EARBUD_LINK')">Buy Now</button>
+  <div class="product-grid">
+
+    <!-- Product 1 -->
+    <div class="card">
+      <img src="PASTE_EARBUD_IMAGE_URL_HERE" alt="Earbuds">
+      <div class="card-content">
+        <h3>Wireless Earbuds</h3>
+        <p>High-quality Bluetooth earbuds with clear sound and long battery life.</p>
+        <div class="price">₹350</div>
+        <a href="RAZORPAY_LINK_EARBUD" class="btn" target="_blank">Buy Now</a>
+      </div>
     </div>
-    
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Gill's Gadget</p>
-  </footer>
+    <!-- Product 2 -->
+    <div class="card">
+      <img src="PASTE_CHARGER_IMAGE_URL_HERE" alt="Charger">
+      <div class="card-content">
+        <h3>3-in-1 Charger</h3>
+        <p>Type-C, Micro USB & iPhone compatible fast charging cable.</p>
+        <div class="price">₹499</div>
+        <a href="RAZORPAY_LINK_CHARGER" class="btn" target="_blank">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="card">
+      <img src="PASTE_CABLE_IMAGE_URL_HERE" alt="Data Cable">
+      <div class="card-content">
+        <h3>Data Cable</h3>
+        <p>Durable 1-meter cable for fast charging & data transfer.</p>
+        <div class="price">₹99</div>
+        <a href="RAZORPAY_LINK_CABLE" class="btn" target="_blank">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="card">
+      <img src="PASTE_HOLDER_IMAGE_URL_HERE" alt="Phone Holder">
+      <div class="card-content">
+        <h3>Magnetic Phone Holder</h3>
+        <p>360° adjustable strong magnet holder for car dashboard.</p>
+        <div class="price">₹149</div>
+        <a href="RAZORPAY_LINK_HOLDER" class="btn" target="_blank">Buy Now</a>
+      </div>
+    </div>
+
+  </div>
+
 </body>
 </html>
