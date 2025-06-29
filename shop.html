@@ -21,19 +21,21 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       padding: 20px;
+      max-width: 1200px;
+      margin: auto;
     }
-    .card {
+    .product-card {
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       overflow: hidden;
       transition: 0.3s ease;
     }
-    .card:hover {
+    .product-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
-    .card img {
+    .product-card img {
       width: 100%;
       height: 200px;
       object-fit: contain;
@@ -42,23 +44,25 @@
     .card-content {
       padding: 15px;
     }
-    .card h3 {
-      margin: 0;
+    .product-card h3 {
+      margin: 0 0 10px;
       font-size: 1.2em;
       color: #222;
     }
-    .card p {
-      color: #555;
-      margin: 8px 0;
-      font-size: 0.95em;
-    }
-    .card .price {
+    .product-card .price {
+      color: #28a745;
       font-weight: bold;
       font-size: 1.1em;
       margin-bottom: 10px;
-      color: #000;
     }
-    .btn {
+    .product-card .description {
+      color: #555;
+      font-size: 0.95em;
+      margin-bottom: 15px;
+      max-height: 120px;
+      overflow: hidden;
+    }
+    .buy-btn {
       display: inline-block;
       background: #007bff;
       color: white;
@@ -67,8 +71,9 @@
       border-radius: 6px;
       cursor: pointer;
       text-decoration: none;
+      transition: background 0.3s ease;
     }
-    .btn:hover {
+    .buy-btn:hover {
       background: #0056b3;
     }
   </style>
@@ -79,59 +84,49 @@
 
   <div class="product-grid">
 
-    <!-- Product Card for Ultrapods Max TWS Earbuds Pro --><div class="max-w-sm bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-  <img class="w-full h-48 object-cover" src="images/Ulpd.webp" alt="Ultrapods Max TWS Earbuds">
-  <div class="p-4">
-    <h2 class="text-xl font-semibold text-gray-800">Ultrapods Max TWS Earbuds Pro Bluetooth</h2>
-    <p class="text-lg text-green-600 font-bold mt-2">₹349</p>
-    <ul class="text-sm text-gray-700 mt-2 list-disc list-inside">
-      <li>Bluetooth 5.3</li>
-      <li>Intelligent Touch Control</li>
-      <li>Long Lasting Endurance</li>
-      <li>IPX4 Waterproof</li>
-      <li>Transparent Appearance</li>
-      <li>HD Voice</li>
-      <li>Game Mode & Master-Slave Pairing</li>
-    </ul>
-    <a href="https://wa.me/917888615318?text=Hi%2C%20I%20want%20to%20buy%20Ultrapods%20Max%20TWS%20Earbuds%20Pro%20Bluetooth%20from%20Gill's%20Gadget.%20Is%20it%20available%3F" target="_blank" class="mt-4 inline-block px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition duration-300">
-      Buy Now
-    </a>
-  </div>
-    </div>
-    
-
+    <!-- Product 1 -->
     <div class="product-card">
-  <img src="images/svfc.webp" alt="Supervooc Fast Charger and Cable" />
-  <h3>Supervooc Fast Charger and Cable</h3>
-  <p class="price">₹319</p>
-  <p class="description">
-    65W SuperVOOC fast charging adapter with Type-C cable. Built for fast & safe charging, compatible with most VOOC-enabled devices. Compact design with high efficiency.
-  </p>
-  <a href="https://wa.me/91XXXXXXXXXX?text=Hi, I want to buy Supervooc Fast Charger and Cable (₹319)." class="buy-btn" target="_blank">Buy Now</a>
+      <img src="images/Ulpd.webp" alt="Ultrapods Max TWS Earbuds">
+      <div class="card-content">
+        <h3>Ultrapods Max TWS Earbuds Pro Bluetooth</h3>
+        <p class="price">₹349</p>
+        <p class="description">
+          Bluetooth 5.3, Intelligent Touch Control, Long Lasting Endurance, IPX4 Waterproof, Transparent Appearance, HD Voice, Game Mode & Master-Slave Pairing.
+        </p>
+        <a href="https://wa.me/917888615318?text=Hi%2C%20I%20want%20to%20buy%20Ultrapods%20Max%20TWS%20Earbuds%20Pro%20Bluetooth%20from%20Gill's%20Gadget.%20Is%20it%20available%3F" target="_blank" class="buy-btn">
+          Buy Now
+        </a>
+      </div>
     </div>
-   
 
-    <!-- Product 4 -->
+    <!-- Product 2 -->
     <div class="product-card">
-  <img src="images/ncbn.webp" alt="Trendy ANC Gaming Neckband" />
-  <h3>Trendy ANC Gaming Neckband</h3>
-  <p class="price">₹459</p>
-  <p class="description">
-    Trendy ANC Gaming Neckband featuring 50-hour battery backup, deep bass sound, gaming chipset, Type-C fast charging, vibration alerts on calls and notifications, and water/dust proof design.<br><br>
-    <strong>Highlights:</strong><br>
-    • Play Time: Above 20 Hours<br>
-    • Type: In The Ear<br>
-    • Battery Charge Time: 1 Hour<br>
-    • Color: Green<br>
-    • Compatibility: All Smartphones<br>
-    • Water Resistant: Yes<br>
-    • Material: ABS Plastic<br>
-    • Bluetooth Version: 5.4<br>
-    • Noise Cancelling: Yes<br>
-    • Charging Type: Type C<br>
-    • Warranty: 6 Months Pick Up<br>
-  </p>
-  <a href="https://wa.me/917888615318?text=Hi, I want to buy Trendy ANC Gaming Neckband (₹459)." class="buy-btn" target="_blank">Buy Now</a>
+      <img src="images/svfc.webp" alt="Supervooc Fast Charger and Cable">
+      <div class="card-content">
+        <h3>Supervooc Fast Charger and Cable</h3>
+        <p class="price">₹319</p>
+        <p class="description">
+          65W SuperVOOC fast charging adapter with Type-C cable. Built for fast & safe charging, compatible with most VOOC-enabled devices. Compact design with high efficiency.
+        </p>
+        <a href="https://wa.me/917888615318?text=Hi%2C%20I%20want%20to%20buy%20Supervooc%20Fast%20Charger%20and%20Cable%20from%20Gill's%20Gadget.%20Is%20it%20available%3F" target="_blank" class="buy-btn">
+          Buy Now
+        </a>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="images/ncbn.webp" alt="Trendy ANC Gaming Neckband">
+      <div class="card-content">
+        <h3>Trendy ANC Gaming Neckband</h3>
+        <p class="price">₹459</p>
+        <p class="description">
+          Trendy ANC Gaming Neckband featuring 50-hour battery backup, deep bass sound, gaming chipset, Type-C fast charging, vibration alerts on calls and notifications, and water/dust proof design.
+        </p>
+        <a href="https://wa.me/917888615318?text=Hi%2C%20I%20want%20to%20buy%20Trendy%20ANC%20Gaming%20Neckband%20from%20Gill's%20Gadget.%20Is%20it%20available%3F" target="_blank" class="buy-btn">
+          Buy Now
+        </a>
+      </div>
     </div>
 
   </div>
